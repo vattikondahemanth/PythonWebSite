@@ -6,4 +6,4 @@ admin.site.register(Album)
 admin.site.register(Song)
 admin.site.register(Photo)
 
-#------------------------------
+#------------------------------ 

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'website'
 ]
 
 MIDDLEWARE = [
@@ -126,5 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = 'localhost:4200'
+
+LOGIN_REDIRECT_URL = '/admin'
 
 #===========================

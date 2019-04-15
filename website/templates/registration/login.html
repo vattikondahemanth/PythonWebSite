@@ -1,0 +1,15 @@
+<html>
+  <title>Login</title>
+  <body>
+  <form method="POST" name="MY Form"action="{% url 'login' %}">
+      {% csrf_token %}
+    {{ form.username.label_tag }}
+    {{ form.username }}
+
+    {{ form.password.label_tag }}
+    {{ form.password }}
+  <input type="submit"name="button1"value="login">
+  {{ form.errors }}
+  </form>
+  </body>
+</html>
